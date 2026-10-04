@@ -1,7 +1,7 @@
 ---
 name: legal_analysis
 description: "Legal analysis with strict source attribution"
-version: 0.2.1
+version: 0.2.2
 author: Sergey Popov
 license: MIT
 platform: [linux, macos, windows]
