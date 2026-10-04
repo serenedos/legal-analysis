@@ -1,7 +1,7 @@
 ---
 name: legal_analysis
 description: "Legal analysis with strict source attribution"
-version: 0.2.2
+version: 0.2.3
 author: Sergey Popov
 license: MIT
 platform: [linux, macos, windows]
@@ -42,6 +42,8 @@ Facts → legally significant circumstances → legal characterization → appli
 - **Decision-point facts may be decisive or secondary.** If the result depends on a circumstance capable of changing the legal regime (the contract term, a party's status, the type of object, or the occurrence of an event), establish it first instead of building a categorical conclusion on an unstated assumption. If a decisive fact is unknown, provide a structured branch—"if X → A; if Y → B"—identify which fact selects the branch, or ask a clarifying question. Do not choose a "main" branch without a factual basis.
 - **A secondary unknown fact** (one that refines the analysis but does not change the regime or main conclusion) does not require a mandatory branch or question: provide a useful conditional or preliminary conclusion. Legal analysis is not a questionnaire.
 - Respect the dependency on an event occurring: do not anticipate consequences before the event that the applicable rule establishes as a condition.
+- **Qualification branching.** Before reaching a preliminary conclusion, identify materially plausible alternative characterizations when they would lead to different applicable rules, consequences, or remedies. The existence of sources supporting the first characterization does not establish it by itself. Keep competing characterizations open until the facts and sources that distinguish them have been tested. After the preliminary conclusion, use Self-Challenge to test the selected characterization against the strongest remaining alternative. Changing the characterization during analysis is not an error; failing to reconsider it after contradictory facts or sources emerge is an error.
+- **The legal function of known facts.** Before the final conclusion, check that each material fact in the problem has a legal function in the analysis. Do not ignore a known fact merely because the initial legal theory can be built without it. Pay particular attention to the parties' conduct and events after the relationship arose: subsequent actions may change the characterization, available claims, or legal consequences. Treat a fact as material if it could change the characterization, applicable regime, claim, defense, remedy, or outcome. This rule does not require commenting on every factual detail. Do not assign a known fact a predetermined meaning; its meaning must also be tested legally.
 
 # Sources and Provenance
 
@@ -65,7 +67,9 @@ At a minimum, check: a special rule or exception; an alternative characterizatio
 - Guard against confirmation bias: do not search only for sources that support the first theory.
 - **Self-challenge must be proportionate to the question.** It tests the conclusion's resilience; it is not a duty to manufacture doubt. Do not mechanically research case law, exceptions, and alternative constructions for every simple question when a direct verified source resolves it unambiguously and there are no signs of a material competing position.
 - If a serious competing position exists, research it or state expressly that it has not been verified and could change the conclusion.
-- **Logical chain.** For a key conclusion, reconstruct: fact → characterization → applicable rule/source → legal consequence → conclusion. Do not conceal a missing link with smooth prose. The more intermediate characterizations there are, the more carefully the chain must be checked and the more cautiously confidence should be expressed.
+- Explicitly check: (1) the selected characterization against the strongest plausible alternative; (2) the weakest link in the consequence chain; and (3) whether the proposed remedy actually follows from the established legal consequence rather than merely being mentioned in a rule or source.
+- **Logical chain.** For a key conclusion, and especially before recommending practical action, reconstruct the full chain: fact → legal characterization → applicable rule → legal consequence → prerequisites for the remedy → remedy → practical result. Do not infer that a remedy is available merely because a rule or source mentions it. If a necessary link is uncertain, state that uncertainty and do not present the downstream conclusion as established. Do not conceal a missing link with smooth prose. The more intermediate characterizations there are, the more carefully the chain must be checked and the more cautiously confidence should be expressed.
+- **Revision discipline (without giving weight to the earlier conclusion).** A conclusion reached earlier has no evidentiary force merely because it was reached earlier, and it is not protected merely because research has already been conducted in support of it. When a new fact, source, counterargument, or substantive objection challenges a material link in the chain: reopen that link; reconsider the characterization if necessary; recalculate every downstream conclusion that depends on it; and rebuild the affected part of the reasoning from the corrected point. Tell the user about the revision only if the earlier position was already presented to them or the change is material to understanding the current conclusion; do not recount the history of internal reasoning.
 
 # Interpretation and Competing Positions
 
@@ -94,6 +98,7 @@ The wording used to express confidence must match the evidentiary basis; determi
 
 - Do not use confidence percentages without an objective methodology. Explain confidence by its reason (whether the source and facts have been verified, and whether a competing position exists).
 - Do not add "possibly" mechanically to every conclusion; do not artificially weaken a direct conclusion from a verified rule.
+- **Confidence follows provenance.** An unverified or secondary source cannot raise confidence in the part of a conclusion that depends on it. If the conclusion is independently and sufficiently supported by verified primary sources, a weak additional source should not lower confidence in the conclusion as a whole.
 - **Confidence in the text of a rule is not confidence in the outcome of a case.** Accuracy in reading the source, applicability, characterization of facts, and dispute forecasting are different things.
 - **A court forecast is not a legal conclusion, and neither is a party's position.** A correct rule does not automatically mean that a case will be won; a strong position does not guarantee a particular court outcome.
 - Caution must not become a refusal to take a position: state the best-supported option first, then identify the boundary of confidence and what could change it.

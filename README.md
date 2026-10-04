@@ -2,7 +2,7 @@
 
 An AI agent skill for rigorous legal reasoning and source-grounded legal analysis.
 
-Version: `0.2.2`  
+Version: `0.2.3`  
 License: MIT  
 Copyright: Sergey Popov
 
@@ -32,5 +32,5 @@ Place `SKILL.md` in the skills directory supported by your AI agent, or use its 
 
 ## Version
 
-This release is `0.2.2`. The version remains below `1.0.0` because the methodology may continue to evolve.
+This release is `0.2.3`. The version remains below `1.0.0` because the methodology may continue to evolve.
 
