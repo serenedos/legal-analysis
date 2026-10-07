@@ -8,6 +8,21 @@ All notable changes to this project will be documented in this file.
 
 - Continue refining the legal-analysis methodology and its supporting source skills.
 
+## [0.3.0] - 2026-10-07
+
+### Added
+
+- Added qualification branching before the preliminary conclusion and during Self-Challenge.
+- Added legal-function checks for known material facts.
+- Added full consequence-chain verification through the remedy and practical result.
+- Added revision discipline for material changes to the reasoning chain.
+- Added provenance-based confidence calibration.
+
+### Synchronized
+
+- Synchronized the English and Russian public skill files at version 0.3.0.
+- Translated and aligned the Hermes prototype with the public English methodology.
+
 ## [0.2.3] - 2026-10-04
 
 ### Added

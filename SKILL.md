@@ -1,7 +1,7 @@
 ---
 name: legal_analysis
 description: "Legal analysis with strict source attribution"
-version: 0.2.3
+version: 0.3.0
 author: Sergey Popov
 license: MIT
 platform: [linux, macos, windows]
@@ -14,6 +14,8 @@ metadata:
 # Purpose / When to Use
 
 Use this skill when analyzing a legal question, interpreting a rule, reviewing case law, or preparing a legal opinion. These are foundational principles of legal reasoning: they apply in any legal system and with any set of tools for finding and reading sources. This is not a repository of legal rules or an instruction manual for a specific platform.
+
+When a legal question concerns Russian law or Russian legal instruments, use this skill together with `legal-analysis-rf-sources`. Use the related skill to obtain and verify the texts of Russian statutory sources; use this skill for legal reasoning and application.
 
 # Core Principle
 
@@ -53,6 +55,10 @@ Facts → legally significant circumstances → legal characterization → appli
   1. **Verified source** — actually read; it is possible to show precisely what it establishes.
   2. **Legal conclusion** — the logical application of verified sources to established facts. This is ordinary professional work. The strength of the conclusion cannot exceed the strength of its logical links.
   3. **Unverified hypothesis** — the remembered content of a rule, an assumed position, an analogy, or an unknown fact. Do not silently use it as an established premise of a conclusion.
+- **Boundaries of authority.** When a source supports a legal proposition, determine not only the rule it establishes but also its material conditions, exceptions, and limits of application. The same authority may support a general rule while limiting its scope. Do not classify authorities mechanically as simply "supporting" or "opposing" when their legal function is more nuanced.
+- **Do not infer a line of authority from a single source.** One supporting source may establish that a legal position exists, but it does not by itself establish that the position is prevailing, stable, consistent, or current. Make broader claims about the state, consistency, or direction of authority only when the research basis supports them. This does not require surveying multiple authorities when one controlling or otherwise decisive primary authority directly resolves the issue.
+- **Distinguish the rule from its application.** Distinguish between a source establishing the content of a legal rule or authoritative proposition and a source demonstrating how that rule is applied to concrete facts. A verified rule does not by itself establish that it applies to the facts under analysis; where application is materially uncertain, test it separately.
+- **Negative research results require caution.** Before stating that no relevant source, exception, contrary position, or case law was identified, consider whether the research coverage supports that statement. Failure to find something through one search path is not evidence of absence when another reasonable path could produce a different result. Phrase negative findings according to the actual scope of the research and do not turn "not identified in the sources and searches reviewed" into a universal claim.
 - **An anchor quotation** is appropriate when the source directly resolves the question, its content is disputed, the exact wording affects the conclusion, or the model makes a claim about the content of a specific instrument. Check the quotation against the source. Derivative conclusions may refer to already established content without repeating the same quotation. A quotation does not replace an applicability analysis.
 - **Verifying an instrument's existence and identifying details** is separate from verifying its content.
 
@@ -64,10 +70,13 @@ Before the final conclusion, ask:
 
 At a minimum, check: a special rule or exception; an alternative characterization; an unknown decision-point fact; a term of the contract or another document; a different time at which a right arises or ends; a competing interpretation; and a contrary judicial position where case law matters.
 
+Explicitly check: (1) the selected characterization against the strongest plausible alternative; (2) the weakest link in the consequence chain; and (3) whether the proposed remedy actually follows from the established legal consequence rather than merely being mentioned in a rule or source.
+
 - Guard against confirmation bias: do not search only for sources that support the first theory.
 - **Self-challenge must be proportionate to the question.** It tests the conclusion's resilience; it is not a duty to manufacture doubt. Do not mechanically research case law, exceptions, and alternative constructions for every simple question when a direct verified source resolves it unambiguously and there are no signs of a material competing position.
-- If a serious competing position exists, research it or state expressly that it has not been verified and could change the conclusion.
-- Explicitly check: (1) the selected characterization against the strongest plausible alternative; (2) the weakest link in the consequence chain; and (3) whether the proposed remedy actually follows from the established legal consequence rather than merely being mentioned in a rule or source.
+- **Search against the thesis, not only for it.** When a material competing position exists, formulate it as an independent research hypothesis and, where research is required, search specifically for authority capable of supporting it. Look not only for the opposite conclusion, but also for exceptions, limiting conditions, narrower formulations of the rule, alternative legal characterizations, circumstances in which the initial proposition does not apply, and authority showing that a fact or condition is insufficient by itself. Awareness of a counterargument is not a substitute for researching it when it could materially change the conclusion. If the position has not been verified, state that expressly.
+- **Coverage check.** Before finalizing a research-intensive legal conclusion, ask whether any material part of the research plan remains untested. This is distinct from Self-Challenge: Self-Challenge asks what could make the conclusion wrong or incomplete; the coverage check asks what material question or research path that should have been tested was not actually tested. Do not require a formal coverage audit for a simple question directly resolved by a verified source.
+- **Atomize compound legal propositions.** When a legal conclusion contains several propositions, consequences, or inferential steps requiring distinct legal support, separate them into independently testable propositions. Authority supporting one part of a compound proposition must not silently be treated as support for the remaining parts. Do not atomize mechanically when a simple proposition is supported as a whole.
 - **Logical chain.** For a key conclusion, and especially before recommending practical action, reconstruct the full chain: fact → legal characterization → applicable rule → legal consequence → prerequisites for the remedy → remedy → practical result. Do not infer that a remedy is available merely because a rule or source mentions it. If a necessary link is uncertain, state that uncertainty and do not present the downstream conclusion as established. Do not conceal a missing link with smooth prose. The more intermediate characterizations there are, the more carefully the chain must be checked and the more cautiously confidence should be expressed.
 - **Revision discipline (without giving weight to the earlier conclusion).** A conclusion reached earlier has no evidentiary force merely because it was reached earlier, and it is not protected merely because research has already been conducted in support of it. When a new fact, source, counterargument, or substantive objection challenges a material link in the chain: reopen that link; reconsider the characterization if necessary; recalculate every downstream conclusion that depends on it; and rebuild the affected part of the reasoning from the corrected point. Tell the user about the revision only if the earlier position was already presented to them or the change is material to understanding the current conclusion; do not recount the history of internal reasoning.
 
@@ -106,6 +115,10 @@ The wording used to express confidence must match the evidentiary basis; determi
 # Practical Legal Outcome
 
 After the legal conclusion, where appropriate, identify: legal consequences; available remedies; necessary actions; material risks; and the facts, documents, or sources capable of changing the recommendation. Do not give a categorical practical recommendation when its necessary legal premises have not been established.
+
+# Professional Style
+
+Write substantive legal analysis and legal opinions as legal memoranda, not as a conversation about performing the analysis. Prefer natural impersonal, source-centered, issue-centered, and legally operative formulations over unnecessary first-person narration ("I found," "I think," "I checked") and direct conversational instructions to the reader. This does not prohibit natural first-person language in ordinary conversational or procedural communication; impersonal wording must not overstate certainty.
 
 # Supporting References
 
